@@ -1,1 +1,162 @@
 @import "tailwindcss";
+
+* {
+  font-family: "Inter";
+}
+
+/* Custom gradient classes for repeating patterns */
+.bg-main-gradient {
+  @apply bg-gradient-to-br from-cyan-950 via-slate-950 to-sky-950;
+}
+
+/* Card background gradients */
+.bg-card-gradient {
+  @apply bg-gradient-to-br from-slate-800/60 to-slate-700/40;
+}
+
+.bg-card-gradient-hover {
+  @apply hover:border-slate-500/70 hover:shadow-lg hover:shadow-slate-500/10;
+}
+
+/* Section card with full styling */
+.section-card {
+  @apply bg-gradient-to-br from-slate-800/60 to-slate-700/40 rounded-2xl p-6 border border-slate-600/50 transition-all duration-300;
+}
+
+.section-card:hover {
+  @apply border-slate-500/70 shadow-lg shadow-slate-500/10;
+}
+
+/* Upload area styling */
+.upload-area {
+  @apply bg-slate-800/50 rounded-xl p-4 sm:p-6 lg:p-8 max-w-xl mx-auto backdrop-blur border border-teal-700 shadow-md shadow-sky-700 hover:shadow-sky-400 hover:shadow-2xl transition duration-500;
+}
+
+.upload-zone {
+  @apply text-center p-4 sm:p-6 lg:p-8 border-2 border-dashed border-blue-400/30 rounded-lg;
+}
+
+/* Button gradients */
+.btn-primary {
+  @apply px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-teal-500 to-sky-500 text-white font-semibold rounded-lg cursor-pointer hover:opacity-80 transition text-base sm:text-lg;
+}
+
+.btn-secondary {
+  @apply px-4 py-2 bg-red-500/20 text-red-300 rounded-xl border border-red-500/30 hover:bg-red-500/30 transition text-lg cursor-pointer;
+}
+
+/* Score card styling */
+.score-card {
+  @apply bg-gradient-to-br from-cyan-500/30 via-blue-600/20 to-sky-900/40 rounded-2xl p-6 sm:p-8 border border-sky-500/20 shadow-lg hover:shadow-xl transition-all duration-300;
+}
+
+/* Progress bar base */
+.progress-bar {
+  @apply w-full h-5 bg-slate-700/50 rounded-full overflow-hidden border border-slate-600/30;
+}
+
+.progress-bar-small {
+  @apply w-full h-4 bg-slate-700/50 rounded-full overflow-hidden border border-slate-600/30;
+}
+
+/* Icon container */
+.icon-container {
+  @apply w-10 h-10 rounded-full flex items-center justify-center;
+}
+
+.icon-container-lg {
+  @apply w-12 h-12 rounded-full flex items-center justify-center;
+}
+
+.icon-container-xl {
+  @apply w-16 h-16 rounded-2xl flex items-center justify-center border;
+}
+
+/* Feature card gradients */
+.feature-card-green {
+  @apply relative bg-gradient-to-br from-green-500/10 to-green-600/5 border border-green-500/30 p-6 rounded-2xl text-center transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-green-500/20 hover:border-green-400/50;
+}
+
+.feature-card-orange {
+  @apply relative bg-gradient-to-br from-orange-500/10 to-orange-600/5 border border-orange-500/30 p-6 rounded-2xl text-center transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-orange-500/20 hover:border-orange-400/50;
+}
+
+/* Info box gradients */
+.info-box-cyan {
+  @apply bg-gradient-to-r from-cyan-500/10 to-cyan-600/5 rounded-xl border border-cyan-500/20 p-4;
+}
+
+.info-box-emerald {
+  @apply bg-gradient-to-r from-emerald-500/10 to-emerald-600/5 rounded-xl border border-emerald-500/20 p-4;
+}
+
+.info-box-violet {
+  @apply bg-gradient-to-r from-violet-500/10 to-violet-600/5 rounded-xl border border-violet-500/20 p-4;
+}
+
+.info-box-blue {
+  @apply bg-blue-500/10 rounded-xl p-4 border border-blue-500/20;
+}
+
+/* Keyword tag styling */
+.keyword-tag {
+  @apply px-4 py-2 bg-gradient-to-r from-blue-500/20 to-blue-600/10 text-blue-300 rounded-xl border border-blue-500/30 font-medium transition-all duration-300 hover:scale-110 hover:bg-blue-500/30 hover:border-blue-400/50 hover:shadow-lg hover:shadow-blue-500/20 hover:text-blue-200;
+}
+
+/* List item styling */
+.list-item-green {
+  @apply flex items-start gap-2 bg-green-500/10 rounded-lg px-3 py-2 border border-green-500/20 transition-all duration-200 hover:bg-green-500/20 hover:border-green-400/40;
+}
+
+.list-item-orange {
+  @apply flex items-start gap-2 bg-orange-500/10 rounded-lg px-3 py-2 border border-orange-500/20 transition-all duration-200 hover:bg-orange-500/20 hover:border-orange-400/40;
+}
+
+.list-item-cyan {
+  @apply flex items-center gap-2 text-slate-200 text-sm;
+}
+
+.list-item-emerald {
+  @apply flex items-center gap-2 text-slate-200 text-sm;
+}
+
+/* Loading spinner */
+.loading-spinner {
+  @apply animate-spin w-10 h-10 sm:w-12 sm:h-12 border-4 border-blue-400/30 border-t-sky-400 rounded-full mx-auto mb-4;
+}
+
+/* File info card */
+.file-info-card {
+  @apply bg-gradient-to-r from-slate-800/80 to-slate-700/60 rounded-3xl p-6 border border-slate-600/50 backdrop-blur-sm;
+}
+
+/* Summary box */
+.summary-box {
+  @apply bg-slate-700/30 rounded-xl p-4 border border-slate-600/30;
+}
+
+/* Score status styling */
+.score-status-excellent {
+  @apply bg-green-500/20 text-green-300 border border-green-500/30;
+}
+
+.score-status-good {
+  @apply bg-yellow-500/20 text-yellow-300 border border-yellow-500/30;
+}
+
+.score-status-improvement {
+  @apply bg-red-500/20 text-red-300 border border-red-500/30;
+}
+
+/* Progress bar colors */
+.progress-excellent {
+  @apply bg-gradient-to-r from-green-400 to-emerald-400;
+}
+
+.progress-good {
+  @apply bg-gradient-to-r from-yellow-400 to-orange-400;
+}
+
+.progress-improvement {
+  @apply bg-gradient-to-r from-red-400 to-pink-400;
+}
