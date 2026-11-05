@@ -255,7 +255,7 @@ function App()
               className="list-item-green">
                 <span className="text-green-400 text-sm mt-0.5">{item}</span>
                 <span className="text-slate-200 font-medium text-sm leading-relaxed">
-                  {strength}
+                  {item}
                 </span>
                 </div> 
             ))}
@@ -286,5 +286,5 @@ function App()
       </div>
      </div>
     );
-
+  }
 export default App;
