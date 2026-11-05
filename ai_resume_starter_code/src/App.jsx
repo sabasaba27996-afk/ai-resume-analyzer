@@ -116,13 +116,13 @@ function App()
   return (
     <div className="min-h-screen bg-main-gradient p-4 sm:p-6 lg:p-8 flex items-center justify-center">
       
-      <div className="max-w-5xl max-auto w-full">
-
+      <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-6">
-          <h1 claasName="text-5xl sm:text-6xl lg:text-7xl font-light bg-gradient-to-r from-cyan-300 via-teal-200 to-sky-300 bg-clip-text text-transparent mb-2">AI Resume Analyzer</h1>
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light bg-gradient-to-r from-cyan-300 via-teal-200 to-sky-300 bg-clip-text text-transparent mb-2">AI Resume Analyzer</h1>
           <p className="text-slate-300 text-sm sm:text-base">Upload your PDF resume and get instant AI feedback</p>
         </div> 
-
+         
+         
 
         {!uploadedFile && (
           <div className="upload-area">
@@ -137,7 +137,7 @@ function App()
             </p>     
 
             <input type="file"
-            accept="pdf"
+            accept=".pdf"
             onChange={handleFileUpload}
             disabled={!aiReady}
             className="hidden"
@@ -153,7 +153,7 @@ function App()
              </label>  
            </div>
         </div>
-      )}
+     )}
 
      {isLoading && (
      <div className="p-6 sm:p-8 max-w-md mx-auto">
@@ -169,7 +169,7 @@ function App()
                 <div className="file-info-card">
                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div className="flex items-center gap-4">
-                    <div className="icon-container-x1 bg-gradient-to-br☐ from-blue-500/20 to-cyan-500/20 border-blue-500/30">
+                    <div className="icon-container-xl bg-gradient-to-br☐ from-blue-500/20 to-cyan-500/20 border-blue-500/30">
                   <span className="text-3xl"></span>
                   </div>
                  <div>
@@ -187,11 +187,104 @@ function App()
           </div>
          </div>
         </div>
+
+
+        <div className="score-card">
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white">
+                Overall Score
+                </h2>
+            </div>
+            <div className="relative">
+              <p className="text-6xl sm:text-8xl font-extrabold text-cyan-400 drop-shadow-ig">
+                {analysis.overallScore || "7"}
+                </p>
+            </div>
+            <div className={`inline-flex items-center gap-2 mt-3 px-4 py-2 rounded-full ${ parseInt(analysis.overallScore) >= 8 
+            ? "score-status-excellent"
+            : parseInt(analysis.overallScore) >= 6 
+            ? "score-status-good"
+            : "score-status-improvement"}`}>
+              <span className="text-lg">
+                {parseInt(analysis.overallScore) >= 8
+                ? "Excellent"
+                : parseInt(analysis.overallScore) >= 6
+                ? "Good"
+                : "Needs Improvement"}
+              </span>
+              <span className="font-semibold text-lg">
+                {parseInt(analysis.overallScore) >= 8
+                ? "Keep up the great work!"
+                : parseInt(analysis.overallScore) >= 6
+                ? "You're on the right track!"
+                : "Consider making improvements."}
+
+              </span>
+          </div>
+        </div>
+
+        <div className="progress-bar">
+          <div className={`h-full rounded-full transition-all  duration-1000 ease-out shadow-sm ${parseInt(analysis.overallScore) >= 8
+          ? "progress-excellent"
+          : parseInt(analysis.overallScore) >= 6
+          ? "progress-good"
+          : "progress-improvement"}`}
+          style={{ width: `${(parseInt(analysis.overallScore) * 10) *100}%` }}
+         ></div>
+        </div>
+
+        <p className="text-slate-400 text-sm mt-3 text-center font-medium">
+          Score based on content quality,formatting, and keyword usage.
+        </p>
       </div>
-       )}
+
+
+      <div className="grid sm:grid-cols-2 gap-4">
+        <div className="feature-card-green group">
+          <div className="bg-green-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-green-400/30 transition-color">
+         <span className="text-green-300 text-xl">✓</span>
+          </div>
+          <h4 className="text-green-300 text-sm font-semibold uppercase tracking-wide mb-3">
+            Top Strengths
+          </h4>
+          <div className="space-y-2 text-left">
+
+            {analysis.strength.slice(0, 3).map((item, index) => (
+              <div  key={index}
+              className="list-item-green">
+                <span className="text-green-400 text-sm mt-0.5">{item}</span>
+                <span className="text-slate-200 font-medium text-sm leading-relaxed">
+                  {strength}
+                </span>
+                </div> 
+            ))}
+          </div>
+        </div>
+        <div className="feature-card-orange group">
+          <div className="bg-orange-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-orange-400/30 transition-color">
+         <span className="text-orange-300 text-xl">✓</span>
+          </div>
+          <h4 className="text-orange-300 text-sm font-semibold uppercase tracking-wide mb-3">
+            Main IMprovements
+          </h4>
+          <div className="space-y-2 text-left">
+
+            {analysis.improvement.slice(0, 3).map((item, index) => (
+              <div key={index} className="list-item-green">
+                <span className="text-green-400 text-sm mt-0.5"> </span>
+                <span className="text-slate-200 font-medium text-sm loading-relaxed">
+                  {item}
+                </span>
+                </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
-  );
-}
+  )}
+      </div>
+     </div>
+    );
 
 export default App;
