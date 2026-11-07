@@ -230,7 +230,7 @@ function App()
           : parseInt(analysis.overallScore) >= 6
           ? "progress-good"
           : "progress-improvement"}`}
-          style={{ width: `${(parseInt(analysis.overallScore) * 10) *100}%` }}
+          style={{ width: `${parseInt(analysis.overallScore) * 10}%` }}
          ></div>
         </div>
 
@@ -250,7 +250,7 @@ function App()
           </h4>
           <div className="space-y-2 text-left">
 
-            {analysis.strength.slice(0, 3).map((item, index) => (
+            {(analysis.strengths || []).slice(0, 3).map((item, index) => (
               <div  key={index}
               className="list-item-green">
                 <span className="text-green-400 text-sm mt-0.5">{item}</span>
@@ -270,9 +270,9 @@ function App()
           </h4>
           <div className="space-y-2 text-left">
 
-            {analysis.improvement.slice(0, 3).map((item, index) => (
-              <div key={index} className="list-item-green">
-                <span className="text-green-400 text-sm mt-0.5"> </span>
+            {(analysis.improvements || []).slice(0, 3).map((item, index) => (
+              <div key={index} className="list-item-orange">
+                <span className="text-orange-400 text-sm mt-0.5"> </span>
                 <span className="text-slate-200 font-medium text-sm loading-relaxed">
                   {item}
                 </span>
@@ -281,7 +281,27 @@ function App()
           </div>
         </div>
       </div>
-    </div>
+
+
+
+     <div className="section-card group">
+      <div ClassName="flex items-center gap-3 mb-4">
+        <div className="icon-container bg-purple-500/20">
+        <span className="text-purple-300 text-lg"> </span>
+        </div>
+        <h4 className="text-xl font-bold text-white">Executive Summary</h4>
+      </div>
+
+     </div>
+
+
+
+
+
+
+
+
+      </div> 
   )}
       </div>
      </div>
