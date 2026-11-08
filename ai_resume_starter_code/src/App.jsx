@@ -240,7 +240,7 @@ function App()
       </div>
 
 
-      <div className="grid sm:grid-cols-2 gap-4">
+      <div className="grid sm:grid-cols-2 gap-4 items-start">
         <div className="feature-card-green group">
           <div className="bg-green-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-green-400/30 transition-colors">
          <span className="text-green-300 text-xl">✓</span>
@@ -272,7 +272,7 @@ function App()
 
             {(analysis.improvements || []).slice(0, 3).map((item, index) => (
               <div key={index} className="list-item-orange">
-                <span className="text-orange-400 text-sm mt-0.5"> </span>
+                <span className="text-orange-400 text-sm mt-0.5">⚡ </span>
                 <span className="text-slate-200 font-medium text-sm leading-relaxed">
                   {item}
                 </span>
