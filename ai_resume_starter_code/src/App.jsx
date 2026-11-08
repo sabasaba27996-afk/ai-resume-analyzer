@@ -240,8 +240,8 @@ function App()
       </div>
 
 
-      <div className="grid sm:grid-cols-2 gap-4 items-start">
-        <div className="feature-card-green group">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch">
+        <div className="feature-card-green group h-full">
           <div className="bg-green-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-green-400/30 transition-colors">
          <span className="text-green-300 text-xl">✓</span>
           </div>
@@ -261,9 +261,9 @@ function App()
             ))}
           </div>
         </div>
-        <div className="feature-card-orange group">
+        <div className="feature-card-orange group h-full">
           <div className="bg-orange-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-orange-400/30 transition-color">
-         <span className="text-orange-300 text-xl">✓</span>
+         <span className="text-orange-300 text-xl">↑</span>
           </div>
           <h4 className="text-orange-300 text-sm font-semibold uppercase tracking-wide mb-3">
             Main Improvements
@@ -287,7 +287,7 @@ function App()
      <div className="section-card group">
       <div className="flex items-center gap-3 mb-4">
         <div className="icon-container bg-purple-500/20">
-        <span className="text-purple-300 text-lg"> </span>
+        <span className="text-purple-300 text-lg">📋</span>
         </div>
         <h4 className="text-xl font-bold text-white">Executive Summary</h4>
       </div>
