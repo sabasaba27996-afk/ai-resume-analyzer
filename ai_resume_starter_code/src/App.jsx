@@ -253,7 +253,7 @@ function App()
             {(analysis.strengths || []).slice(0, 3).map((item, index) => (
               <div  key={index}
               className="list-item-green">
-                <span className="text-green-400 text-sm mt-0.5">{item}</span>
+                <span className="text-green-400 text-sm mt-0.5">✓</span>
                 <span className="text-slate-200 font-medium text-sm leading-relaxed">
                   {item}
                 </span>
