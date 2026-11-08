@@ -302,7 +302,7 @@ function App()
      <div className="section-card group">
       <div className="flex items-center gap-3 mb-6">
         <div className="icon-container bg-cyan-500/20">
-        <span className="text-cyan-300 text-lg"> </span>
+        <span className="text-cyan-300 text-lg">📊</span>
         </div>
         <h4 className="text-xl font-bold text-white">Performance Metrics</h4>
       </div>
@@ -335,14 +335,14 @@ function App()
         <div className="section-card group">
           <div className="flex items-center gap-3 mb-6">
             <div className="icon-container bg-purple-500/20">
-            <span className="text-lg text-purple-300"></span>
+            <span className="text-lg text-purple-300">💡</span>
             </div>
             <h2 className="text-xl font-bold text-purple-400">Resume Insights</h2>
           </div>
           <div className="grid gap-4">
             <div className="info-box-cyan group/item">
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-lg text-cyan-400"></span>
+              <span className="text-lg text-cyan-400">🎯</span>
               <h3 className="text-cyan-300 font-semibold">Action Items</h3>
               </div>
               <div className="space-y-2">
@@ -353,7 +353,7 @@ function App()
                   ]).map((item, index) => (
                     <div className="list-item-cyan"
                      key={index}>
-                      <span className="text-cyan-400">•</span>
+                      <span className="text-cyan-400"></span>
                       <span>{item}</span>
                      </div>
  
@@ -364,7 +364,7 @@ function App()
 
             <div className="info-box-emerald group/item">
             <div className="flex items-center gap-3 mb-2">
-              <span className="text-lg"></span>
+              <span className="text-lg">⚡</span>
               <h3 className="text-emerald-300 font-semibold">Pro Tips</h3>
               </div>
 
