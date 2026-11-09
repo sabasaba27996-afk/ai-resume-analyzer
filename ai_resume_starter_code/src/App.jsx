@@ -223,7 +223,6 @@ function App()
               </span>
           </div>
         </div>
-scm-history-item:c%3A%5CUsers%5CFARIYA%5CDocuments%5CResume%20Analyzer?%7B%22repositoryId%22%3A%22scm0%22%2C%22historyItemId%22%3A%222c593376ac6ece759fe57aba8166cc7d514f013c%22%2C%22historyItemParentId%22%3A%222b29cefc20574ed8fc698adaaf96beff546bd776%22%2C%22historyItemDisplayId%22%3A%222c59337%22%7D
         <div className="progress-bar">
           <div className={`h-full rounded-full transition-all  duration-1000 ease-out shadow-sm ${parseInt(analysis.overallScore) >= 8
           ? "progress-excellent"
