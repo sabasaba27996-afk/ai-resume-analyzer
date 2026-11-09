@@ -215,10 +215,10 @@ function App()
               </span>
               <span className="font-semibold text-lg">
                 {parseInt(analysis.overallScore) >= 8
-                ? "Keep up the great work!"
+                ? ", Keep up the great work!"
                 : parseInt(analysis.overallScore) >= 6
-                ? " You're on the right track!"
-                : "Consider making improvements."}
+                ? ", You're on the right track."
+                : ", Consider making improvements."}
 
               </span>
           </div>
