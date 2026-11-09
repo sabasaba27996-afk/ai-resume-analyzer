@@ -14,7 +14,7 @@ function App()
   const [isLoading, setIsLoading] = useState(false);
   const [uploadedFile, setUploadedFile] = useState(null);
   const [analysis, setAnalysis] = useState(null);
-  const [resumeText, setResumeText] = useState("");
+  const [, setResumeText] = useState("");
   const [presenceChecklist, setPresenceChecklist] = useState([]);
 
   useEffect(() => {
@@ -54,8 +54,8 @@ function App()
         throw new Error("Invalid AI response");
       }
       return parsed;
-    } catch (err) {
-      throw new Error(`Failed to parse AI response: ${ err.message}`);
+    } catch (error) {
+      throw new Error("Failed to parse AI response", {cause: error});
     }
   };
  
