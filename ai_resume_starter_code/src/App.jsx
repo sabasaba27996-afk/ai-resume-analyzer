@@ -390,9 +390,9 @@ function App()
             <div className="section-card group">
               <div className="flex items-center gap-3 mb-6">
                 <div className="icon-container bg-violet-500/20"></div>
-                <span className="text-lg">🤖</span>
+                <span className="text-lg">🤖</span></div>
                 <h2 className="text-violet-400 font-bold text-xl">ATS Optimization</h2>
-              </div>
+              
 
               <div className="info-box-violet mb-4">
                 <div className="flex items-start gap-3 mb-3">
