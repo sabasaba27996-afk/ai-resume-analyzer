@@ -119,7 +119,7 @@ function App()
       <div className="max-w-5xl mx-auto w-full">
         <div className="text-center mb-6">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-light bg-gradient-to-r from-cyan-300 via-teal-200 to-sky-300 bg-clip-text text-transparent mb-2">AI Resume Analyzer</h1>
-          <p className="text-slate-300 text-sm sm:text-base">Upload your PDF resume and get instant AI feedback</p>
+          <p className="text-slate-300 text-sm sm:text-base"> 📄 Upload your PDF resume and get instant AI feedback</p>
         </div> 
          
          
@@ -159,7 +159,7 @@ function App()
      <div className="p-6 sm:p-8 max-w-md mx-auto">
        <div className="text-center">
           <div className="loading-spinner"></div>
-          <h3 className="text-lg sm:text-xl text-slate-200 mb-2">Analyzing Your Resume</h3>
+          <h3 className="text-lg sm:text-xl text-slate-200 mb-2"> ⌛ Analyzing Your Resume</h3>
           <p className="text-slate-400 text-sm sm:text-base">Please wait while AI reviews your resume...</p>
          </div>
       </div>
@@ -193,7 +193,7 @@ function App()
           <div className="text-center mb-6">
             <div className="flex items-center justify-center gap-2 mb-3">
               <h2 className="text-2xl sm:text-3xl font-bold text-white">
-                Overall Score
+                 🎯 Overall Score
                 </h2>
             </div>
             <div className="relative">
@@ -217,7 +217,7 @@ function App()
                 {parseInt(analysis.overallScore) >= 8
                 ? "Keep up the great work!"
                 : parseInt(analysis.overallScore) >= 6
-                ? "You're on the right track!"
+                ? " 👍 You're on the right track!"
                 : "Consider making improvements."}
 
               </span>
@@ -246,7 +246,7 @@ function App()
          <span className="text-green-300 text-xl">✓</span>
           </div>
           <h4 className="text-green-300 text-sm font-semibold uppercase tracking-wide mb-3">
-            Top Strengths
+             🌟 Top Strengths
           </h4>
           <div className="space-y-2 text-left">
 
@@ -266,7 +266,7 @@ function App()
          <span className="text-orange-300 text-xl">↑</span>
           </div>
           <h4 className="text-orange-300 text-sm font-semibold uppercase tracking-wide mb-3">
-            Main Improvements
+            🚀 Main Improvements
           </h4>
           <div className="space-y-2 text-left">
 
@@ -397,7 +397,7 @@ function App()
               <div className="info-box-violet mb-4">
                 <div className="flex items-start gap-3 mb-3">
                   <div>
-                    <h3 className="text-violet-300 font-semibold mb-2">What is ATS?</h3>
+                    <h3 className="text-violet-300 font-semibold mb-2">❓What is ATS?</h3>
                     <p className="text-slate-200 text-sm leading-relaxed">
                       <strong className="text-violet-300">
                         Applicant Tracking Systems (ATS)
@@ -410,7 +410,7 @@ function App()
               <div className="info-box-violet">
                  <div className="flex items-center gap-3 mb-3">
                 <span className="text-lg"></span>
-                <h3 className="text-violet-300 font-semibold text-lg">ATS Compatability Checklist</h3>
+                <h3 className="text-violet-300 font-semibold text-lg"> 📋ATS Compatibility Checklist</h3>
               </div>
 
               <div className="space-y-2">
@@ -432,7 +432,7 @@ function App()
                  <div className="flex items-center gap-3 mb-6">
                 <div className="icon-container bg-blue-500/20"></div>
                 <span className="text-lg"></span>
-                <h2 className="text-blue-400 font-bold text-xl">Recommended Keywords</h2>
+                <h2 className="text-blue-400 font-bold text-xl"> 💡Recommended Keywords</h2>
               </div>
 
               <div className="flex flex-wrap gap-3 mb-4">
