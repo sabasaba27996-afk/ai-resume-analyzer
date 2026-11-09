@@ -159,7 +159,7 @@ function App()
      <div className="p-6 sm:p-8 max-w-md mx-auto">
        <div className="text-center">
           <div className="loading-spinner"></div>
-          <h3 className="text-lg sm:text-xl text-slate-200 mb-2"> ⌛ Analyzing Your Resume</h3>
+          <h3 className="text-lg sm:text-xl text-slate-200 mb-2">Analyzing Your Resume</h3>
           <p className="text-slate-400 text-sm sm:text-base">Please wait while AI reviews your resume...</p>
          </div>
       </div>
@@ -243,10 +243,10 @@ function App()
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 items-stretch">
         <div className="feature-card-green group h-full">
           <div className="bg-green-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-green-400/30 transition-colors">
-         <span className="text-green-300 text-xl">✓</span>
+         <span className="text-green-300 text-xl">☀️</span>
           </div>
           <h4 className="text-green-300 text-sm font-semibold uppercase tracking-wide mb-3">
-             🌟 Top Strengths
+              Top Strengths
           </h4>
           <div className="space-y-2 text-left">
 
@@ -263,10 +263,10 @@ function App()
         </div>
         <div className="feature-card-orange group h-full">
           <div className="bg-orange-500/20 icon-container-lg mx-auto mb-3 group-hover:bg-orange-400/30 transition-color">
-         <span className="text-orange-300 text-xl">↑</span>
+         <span className="text-orange-300 text-xl">🚀</span>
           </div>
           <h4 className="text-orange-300 text-sm font-semibold uppercase tracking-wide mb-3">
-            🚀 Main Improvements
+             Main Improvements
           </h4>
           <div className="space-y-2 text-left">
 
@@ -397,7 +397,7 @@ function App()
               <div className="info-box-violet mb-4">
                 <div className="flex items-start gap-3 mb-3">
                   <div>
-                    <h3 className="text-violet-300 font-semibold mb-2">❓What is ATS?</h3>
+                    <h3 className="text-violet-300 font-semibold mb-2">What is ATS?</h3>
                     <p className="text-slate-200 text-sm leading-relaxed">
                       <strong className="text-violet-300">
                         Applicant Tracking Systems (ATS)
