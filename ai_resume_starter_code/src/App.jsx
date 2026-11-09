@@ -170,7 +170,7 @@ function App()
                  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
                   <div className="flex items-center gap-4">
                     <div className="icon-container-xl bg-gradient-to-br from-blue-500/20 to-cyan-500/20 border-blue-500/30">
-                  <span className="text-3xl"></span>
+                  <span className="text-3xl">✅</span>
                   </div>
                  <div>
                 <h3 className="text-xl font-bold text-green-500 mb-1">Analysis Complete</h3>
@@ -217,7 +217,7 @@ function App()
                 {parseInt(analysis.overallScore) >= 8
                 ? "Keep up the great work!"
                 : parseInt(analysis.overallScore) >= 6
-                ? " 👍 You're on the right track!"
+                ? " You're on the right track!"
                 : "Consider making improvements."}
 
               </span>
@@ -390,7 +390,7 @@ function App()
             <div className="section-card group">
               <div className="flex items-center gap-3 mb-6">
                 <div className="icon-container bg-violet-500/20"></div>
-                <span className="text-lg"></span>
+                <span className="text-lg">🤖</span>
                 <h2 className="text-violet-400 font-bold text-xl">ATS Optimization</h2>
               </div>
 
@@ -431,8 +431,8 @@ function App()
               <div className="section-card group">
                  <div className="flex items-center gap-3 mb-6">
                 <div className="icon-container bg-blue-500/20"></div>
-                <span className="text-lg"></span>
-                <h2 className="text-blue-400 font-bold text-xl"> 💡Recommended Keywords</h2>
+                <span className="text-lg">💡</span>
+                <h2 className="text-blue-400 font-bold text-xl"> Recommended Keywords</h2>
               </div>
 
               <div className="flex flex-wrap gap-3 mb-4">
