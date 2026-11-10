@@ -4,7 +4,7 @@ An AI-powered Resume Analyzer designed to help job seekers evaluate their resume
 
 🌐 Live Demo
 
-"Try AI Resume Analyzer" (https://ai-resume-analyzer-ten-livid.vercel.app/)
+"Try AI Resume Analyzer" (https://myresumely-ai.vercel.app)
 
 📌 About the Project
 
