@@ -1,3 +1,5 @@
+
+
 AI Resume Analyzer 🚀
 
 An AI-powered Resume Analyzer designed to help job seekers evaluate their resumes and improve their ATS (Applicant Tracking System) compatibility.
