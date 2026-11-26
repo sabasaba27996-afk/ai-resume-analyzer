@@ -1,4 +1,7 @@
+## Project Preview
 
+![AI Resume Analyzer]
+(resume-pictures.png)
 
 AI Resume Analyzer 🚀
 
